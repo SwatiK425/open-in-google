@@ -1,0 +1,16 @@
+# Build artifacts / release bundles (attach these to GitHub Releases instead)
+open-in-google.zip
+*.zip
+
+# Logs
+*.log
+
+# Local secrets / state (never commit these — they live in %LOCALAPPDATA%\OpenInGoogle)
+tokens.dat
+config.json
+filemap.json
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
