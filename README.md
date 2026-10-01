@@ -1,8 +1,8 @@
 # Open in Google
 
-I don't have Microsoft 365. So every time someone sent me an `.xlsx`, or ChatGPT generated one for me, I did the same stupid dance: open drive.google.com, New → File upload, wait, right-click → Open with Sheets. Six clicks just to look at a spreadsheet. And lately it's gotten worse, because now the LLMs spit out CSVs and spreadsheets constantly, and every single one means doing that dance again.
+I don't have Microsoft 365. So every time someone sent me an `.xlsx`, or LLMs generated one for me, I did the same stupid dance: open drive.google.com, New → File upload, wait, right-click → Open with Sheets. Six clicks just to take a deeper look at a spreadsheet. And lately it's gotten worse, because now the LLMs spit out CSVs and spreadsheets constantly, and every single one means doing that dance again.
 
-So I built the thing I wanted: right-click the file → "Open in Google Sheets." Done.
+So I built the thing I wanted: right-click the file → "Open in Google Sheets." Done. And with full Google Storage & Privacy control.
 
 ## What it does
 
@@ -11,6 +11,18 @@ Right-click any Excel, CSV, Word, or PowerPoint file on Windows. It uploads to a
 Open the same file again next week and it updates that Drive copy instead of making a second one. Rename the file and it starts fresh. New name, new Drive file, which is what you'd expect.
 
 `.xlsx` `.xls` `.csv` → Sheets · `.docx` `.doc` → Docs · `.pptx` `.ppt` → Slides
+
+## Why this and not something else
+
+Some differentiators for the curious:
+
+- Works wherever the file lands. Downloads folder, Desktop, an email attachment you saved. No special folder, no dragging files into a browser.
+- No sync client, no default-app change. You don't install a background sync app, and you don't change what opens your files.
+- One right-click, native result. It converts to real Google Sheets / Docs / Slides, so add-ons, Apps Script and Google's other native features work.
+- Nothing runs between clicks. It only runs when you right-click, and it only uploads the one file you right-clicked. Good if you care about storage and privacy (I do 🥳).
+
+## When you don't need this: 
+If you only want to view or lightly edit a file AND send it back as an .xlsx, Google's own tools can edit Office files in their original format and save back to it. This tool is for when you want the file to be a part of your Google workspace.
 
 ## Setup
 
